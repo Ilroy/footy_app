@@ -1,9 +1,19 @@
 import React from 'react';
+import HeadToHead from '../../components/HeadToHead/HeadToHead';
+import './Feed.css';
 
 const Feed = () => {
     return (
-        <div>
-            <h1>THIS IS THE FEED</h1>
+        <div classname="feed-display">
+            <HeadToHead/>
+            <HeadToHead/>
+            <HeadToHead/>
+            <HeadToHead/>
+            <HeadToHead/>
+            <HeadToHead/>
+            <HeadToHead/>
+            <HeadToHead/>
+            <HeadToHead/>
         </div>
     )
 }

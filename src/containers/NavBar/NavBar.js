@@ -3,9 +3,9 @@ import './NavBar.css'
 const NavBar = () =>{
     return(
     <div className='topnav'>
-        <a href={"#home"} className='active'>Home</a>
-        <a href={"#feed"} className=''>Feed</a>
+        <a href={"#feed"} className='active'>Feed</a>
         <a href={"#profile"} className=''>Profile</a>
+        <a href={"#sign out"} className='right'>Sign Out</a>
     </div>
     );
 }

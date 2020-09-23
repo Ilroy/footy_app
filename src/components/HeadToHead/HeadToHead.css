@@ -1,0 +1,8 @@
+.h2h-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}

@@ -16,6 +16,8 @@
   grid-column: 1/6;
   grid-row: 3/-1;
   background: pink;
+  overflow-y: auto;
+
 }
 
 .table-container{
