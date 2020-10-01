@@ -4,13 +4,13 @@ import Score from "../Score/Score";
 import Time from "../Time/Time";
 import './HeadToHead.css';
 
-const HeadToHead = () =>{
+const HeadToHead = ({homeTeam, awayTeam, time}) =>{
     return (
         <div className="h2h-row">
-            <Team isReversed={true}/>
-            <Score homeScore={2} awayScore={1}/>
-            <Team isReversed={false}/>
-            <Time currentTime={"40:25"}/>
+            <Team isReversed={true} teamName={homeTeam.name} teamLogo={homeTeam.logo}/>
+            <Score homeScore={homeTeam.score} awayScore={awayTeam.score}/>
+            <Team isReversed={false} teamName={awayTeam.name} teamLogo={awayTeam.logo}/>
+            <Time currentTime={time}/>
         </div>
     )
 }

@@ -7,9 +7,15 @@ const LeagueTable = ({leagueName}) =>{
         <table>
             <caption>{leagueName}</caption>
             <TableHeader/>
-            <TableRow rank={1}/>
-            <TableRow rank={2}/>
-            <TableRow rank={3}/>
+            <TableRow teamInfo={
+                {
+                    rank: 1,
+                    name: "Manchester United",
+                    logo: "https://media.api-sports.io/football/teams/33.png",
+                    
+                }}
+                    teamStats={[38,20,5,13,50,42,8,50]}
+                />
         </table>
     );
 }
