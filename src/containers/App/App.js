@@ -10,14 +10,13 @@ import getOnRouteChange from "../../Util/getOnRouteChange";
 
 const App = () => {
   const [route, setRoute] = useState('signIn');
-  const [isSignedIn, setSignIn] = useState('false');
+  const [isSignedIn, setSignIn] = useState(false);
 
   return (
     <div className='container'>
       <div className="nav-container">
         <NavBar isSignedIn={isSignedIn} changeRoute={getOnRouteChange(setSignIn, setRoute)}/>
       </div>
-
       {route === 'feed'?
         <Fragment>
           <div className="feed-container">
