@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import BoardTitle from '../BoardTitle/BoardTitle';
 import DataList from "../DataList/DataList";
 import "./DataBoard.css";
