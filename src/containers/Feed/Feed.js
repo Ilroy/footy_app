@@ -4,7 +4,7 @@ import './Feed.css';
 
 const Feed = () => {
     return (
-        <div classname="feed-display">
+        <div className="feed-display">
             <HeadToHead 
             homeTeam={
                 {

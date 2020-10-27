@@ -15,8 +15,8 @@ const App = () => {
   const {user,route, isSignedIn} = state;
 
   useEffect(()=>{
-    console.log(state);
-  },[state])
+    console.log(user);
+  },[user])
 
   return (
     <div className='container'>
@@ -38,7 +38,7 @@ const App = () => {
         </div>
       : 
         <div className="form-container">
-          <HomeForm isRegistering={route === "signIn"}/>
+          <HomeForm isRegistering={route !== "signIn"} dispatch={dispatch}/>
         </div>
       }
     </div>

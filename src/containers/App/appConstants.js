@@ -1,5 +1,3 @@
-import INTITAL_STATE from "../InfoForm/InfoFormConstants";
-
 const INITIAL_STATE = {
     user: {
       id: null,

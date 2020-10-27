@@ -9,7 +9,7 @@ import INITIAL_STATE
 const appReducer = (state, action) =>{
     switch (action.type){
         case SET_USER:
-                return {...state, user: action.user}
+                return {...state, user: action.user, isSignedIn: true, route:"feed"}
         case CHANGE_ROUTE:
             return {...state, route:action.route}
         case SIGN_OUT:

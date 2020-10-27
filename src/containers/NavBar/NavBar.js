@@ -14,7 +14,7 @@ const NavBar = ({isSignedIn, dispatch}) =>{
     ) :
     <nav className="topnav">
         <p onClick={() => dispatch(changeRoute("signIn"))}>Sign In</p>
-        <p onClick={() => {console.log("register");dispatch(changeRoute("register"))}}>Register</p>
+        <p onClick={() => dispatch(changeRoute("register"))}>Register</p>
     </nav>
 }
 
