@@ -14,10 +14,6 @@ const App = () => {
 
   const {user,route, isSignedIn} = state;
 
-  useEffect(()=>{
-    console.log(user);
-  },[user])
-
   return (
     <div className='container'>
       <div className="nav-container">

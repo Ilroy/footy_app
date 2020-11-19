@@ -2,7 +2,7 @@ import { changeRoute, setUser } from '../../containers/App/appActions';
 
 export const getOnSubmitSignIn = dispatch => (email, password) =>{
     console.log("in")
-    fetch('http://localhost:3000/signin', {
+    fetch('http://localhost:3000/api/user/signin', {
        method: 'post',
        headers: {'Content-Type': 'application/json'},
        body: JSON.stringify({
@@ -19,7 +19,7 @@ export const getOnSubmitSignIn = dispatch => (email, password) =>{
 
 export const getOnSubmitRegister = dispatch => (email, password, firstName, lastName) =>{
     
-    fetch('http://localhost:3000/register', {
+    fetch('http://localhost:3000/api/user/register', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
@@ -32,6 +32,6 @@ export const getOnSubmitRegister = dispatch => (email, password, firstName, last
     .then(response => response.json())
     .then(message => {
         console.log(message);
-        message === "success"? dispatch(changeRoute("signIn")) : console.log("couldnt register");
+        message === "Success"? dispatch(changeRoute("signIn")) : console.log("couldnt register");
     });
 };

@@ -1,7 +1,8 @@
 const INITIAL_STATE = {
     user: {
       id: null,
-      name: '',
+      firstName: '',
+      lastName:'',
       email: '',
       leagues: [],
       teams: [],
