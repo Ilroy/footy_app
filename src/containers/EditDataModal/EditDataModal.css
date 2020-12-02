@@ -1,5 +1,4 @@
 .edit-modal{
-    display: none;
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -13,7 +12,10 @@
     flex-direction: column;
 
 }
-
+.data-item{
+    display: flex;
+    flex-direction: row;
+}
 .edit-modal-content{
     background-color: #fefefe;
     margin: auto;

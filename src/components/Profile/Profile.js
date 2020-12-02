@@ -2,7 +2,7 @@ import React from 'react';
 import DataBoard from '../DataBoard/DataBoard';
 import "./Profile.css";
 
-const Profile = () =>{
+const Profile = (teams, leagues) =>{
     return(
         <div className="profile">
             <DataBoard title="Teams" 
