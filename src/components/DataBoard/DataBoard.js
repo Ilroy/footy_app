@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
+import Modal from '../../containers/Modal/Modal';
 import BoardTitle from '../BoardTitle/BoardTitle';
-import EditDataModal from '../../containers/EditDataModal/EditDataModal';
 import DataList from "../DataList/DataList";
 import "./DataBoard.css";
 
@@ -9,14 +9,21 @@ import "./DataBoard.css";
 
 const DataBoard = ({title, data}) =>{
     const [isShowing, setIsShowing] = useState(false);
-    console.log("showing data board")
-    return(
-        <div className="board">
-            <BoardTitle title={title} onClickEditButton={setIsShowing}/>
-            <DataList data={data}/>
-            <EditDataModal data={data} isShowing={isShowing} onCloseModal={setIsShowing}/>
-        </div>
 
+    return(
+        <div className="board"> 
+            <div className= "title-box">
+                 <BoardTitle title={title} onClickEditButton={setIsShowing}/>
+            </div>
+           
+            <div className="data-box">
+                <DataList data={data}/>
+            </div>            
+            
+            {isShowing && (<Modal setIsShowing={setIsShowing}> <h1>test</h1> </Modal>)}
+        
+            
+        </div>
     );
 }
 

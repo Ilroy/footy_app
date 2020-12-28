@@ -14,10 +14,12 @@ const App = () => {
 
   const {user,route, isSignedIn} = state;
 
+  const signedIn = true;
+
   return (
     <div className='container'>
       <div className="nav-container">
-        <NavBar isSignedIn={isSignedIn} dispatch={dispatch}/>
+        <NavBar isSignedIn={signedIn} dispatch={dispatch}/>
       </div>
       {route === 'feed'?
         <Fragment>

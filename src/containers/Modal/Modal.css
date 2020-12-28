@@ -1,0 +1,36 @@
+.overlay{
+    display:block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.content{
+    margin: 15% auto;
+    background-color: white;
+    border-radius: 0.25rem;
+    width: 50vw;
+    padding: 2rem;
+    position: relative;
+}
+
+.close{
+    color: black;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+    color:gray;
+    text-decoration: none;
+    cursor: pointer;
+}
