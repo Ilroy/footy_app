@@ -2,25 +2,29 @@ import React, {useState} from 'react';
 import Modal from '../../containers/Modal/Modal';
 import BoardTitle from '../BoardTitle/BoardTitle';
 import DataList from "../DataList/DataList";
+import EditDataList from "../EditDataList/EditDataList";
 import "./DataBoard.css";
 
 
 
 
 const DataBoard = ({title, data}) =>{
-    const [isShowing, setIsShowing] = useState(false);
+    const [isEditShowing, setIsEditShowing] = useState(false);
+    const [isAddShowing, setIsAddShowing] = useState(false);
 
     return(
         <div className="board"> 
             <div className= "title-box">
-                 <BoardTitle title={title} onClickEditButton={setIsShowing}/>
+                 <BoardTitle title={title} onClickEditButton={setIsEditShowing} onClickAddButton={setIsAddShowing}/>
             </div>
            
             <div className="data-box">
                 <DataList data={data}/>
             </div>            
             
-            {isShowing && (<Modal setIsShowing={setIsShowing}> <h1>test</h1> </Modal>)}
+            {isEditShowing && (<Modal setIsShowing={setIsEditShowing}> <EditDataList data={data}/> </Modal>)}
+            {isAddShowing && (<Modal setIsShowing={setIsAddShowing}> <h1>test add</h1> </Modal>)}
+            
         
             
         </div>

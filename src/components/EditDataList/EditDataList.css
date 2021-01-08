@@ -1,0 +1,18 @@
+.edit-list{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+}
+
+.list-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.item-close{
+    font-size: 25px;
+    margin-left: 15px;
+    font-weight: bold;
+}
