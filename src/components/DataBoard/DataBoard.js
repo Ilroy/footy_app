@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Modal from '../../containers/Modal/Modal';
 import BoardTitle from '../BoardTitle/BoardTitle';
 import DataList from "../DataList/DataList";
-import EditDataList from "../EditDataList/EditDataList";
+import EditDataList from "../../components/EditDataList/EditDataList";
 import "./DataBoard.css";
 
 
@@ -24,8 +24,6 @@ const DataBoard = ({title, data}) =>{
             
             {isEditShowing && (<Modal setIsShowing={setIsEditShowing}> <EditDataList data={data}/> </Modal>)}
             {isAddShowing && (<Modal setIsShowing={setIsAddShowing}> <h1>test add</h1> </Modal>)}
-            
-        
             
         </div>
     );

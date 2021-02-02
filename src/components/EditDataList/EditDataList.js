@@ -1,6 +1,6 @@
 import React from 'react';
 import './EditDataList.css';
-import Team from '../Team/Team';
+import Team from '../../components/Team/Team';
 
 const EditDataList = ({data}) =>{
     return(
@@ -13,7 +13,7 @@ const EditDataList = ({data}) =>{
                     isReversed={false}
                     teamName={obj.teamName}
                     teamLogo={obj.teamLogo}/>
-                    <span className="item-close">&times;</span>
+                    <span className="action-text">Delete</span>
                     </div>)
 
                 })
